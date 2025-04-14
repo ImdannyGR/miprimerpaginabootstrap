@@ -9,6 +9,30 @@
   </head>
   <body>
 
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Encabezado</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Tiktok</p>
+        <button class="btn btn-secondary" type="button">A Button</button>
+      </div>
+    </div>
+    
+    <div class="container-fluid mt-3">
+      <h3>Offcanvas Sidebar</h3>
+      
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        Abrir barra deslizable
+      </button>
+    </div>
+    <br>
+    
+
 
     <!--Inicio carrousel-->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -52,8 +76,8 @@
     </div>
  
     <div class="container-fluid mt-3">
-      <h3>Carousel Example</h3>
-      <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+      <h3>Pokémon</h3>
+      <p>Prepárate para vivir una aventura llena de criaturas increíbles, batallas épicas y mucha diversión. Explora este sitio inspirado en el universo Pokémon, donde cada sección te llevará un paso más cerca de convertirte en un verdadero Maestro Pokémon. ¡Atrápalos ya!</p>
     </div>
    <!--Final carousel-->
 
@@ -62,11 +86,11 @@
      <!--Inicio Modal-->
 
 <div class="container mt-3">
-  <h3>Modal Example</h3>
-  <p>Click on the button to open the modal.</p>
+  <h3>Mundo Pokémon</h3>
+  
   
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-    Open modal
+   Abrir video
   </button>
 </div>
 
@@ -78,7 +102,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal">
       </div>
 
       <!-- Modal body -->
@@ -88,7 +112,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
       </div>
 
     </div>
@@ -99,11 +123,11 @@
     <!--Modal 2-->
 
     <div class="container mt-3">
-      <h3>Modal Example</h3>
-      <p>Click on the button to open the modal.</p>
+      <h3>Pdf de nuestro asesor</h3>
+      
       
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
-        Open modal
+        Abrir Pdf
       </button>
     </div>
     
@@ -120,7 +144,8 @@
     
           <!-- Modal body -->
           <div class="modal-body">
-         <a href="pdf/Hoja de vida Daniel Ortega.pdf" target="_blank" download="Link Archivo"></a>
+            <a class="btn btn-success" href="pdf/Hoja de vida Daniel Ortega.pdf" target="_blank" download="Hoja de vida Daniel Ortega.pdf">Descargar Hoja de Vida</a>
+
           </div>
     
           <!-- Modal footer -->
@@ -135,7 +160,7 @@
 
     <!--Aqui empieza card image-->
     <div class="container mt-3">
-      <h2>Card image Ejemplo:</h2>
+      <h2>Tarjeta de presentación de nuestro asesor:</h2>
       <p>Programacón I4</p>
       <div class="card" style="width:400px">
         <img class="card-img-top" src="img/img_avatar1.png" alt="Card image" style="width:100%">
@@ -177,11 +202,7 @@
 </div>
 
 <!--Aqui termina modalcard-->
-    <div class="container">
-
-        <h1>-Contenedor en bootstrap-</h1>
-        <button type="button" class="btn btn-primary">Primary</button>
-
+   
         <!--Barra de navegacion, Aqui empieza-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -213,7 +234,80 @@
             </div>
           </nav> <!--Barra de navegacion, Aqui termina-->
 
+             <!--Aqui comienza accordion-->
+    <div class="container mt-3">
+      <h2>Accordion Example</h2>
+      <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Collapsible Group Item #2
+          </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <!--Inicio acordion 4-->
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+              Collapsible Group Item #4
+            </a>
+          </div>
+          <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      
+    
+     <!--aqui termina acordion 4-->
+     <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+          Collapsible Group Item #5
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+      </div>
+     </div>
     </div>
+    <!--Aqui termina accordion-->
+
+    
 
     <div class="container-fluid">
         <div class="row">
@@ -260,6 +354,8 @@
             </div>
         </div>
     </div>
+
+ 
 
     <footer style="background-color: gray;">
         Pagina web realizada por Daniel Ortega
